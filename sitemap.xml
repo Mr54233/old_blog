@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mr54233.github.io/2022/10/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%81%E6%B0%B4%E8%B4%A6/</loc>
+    
+    <lastmod>2022-10-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mr54233.github.io/about/index.html</loc>
     
     <lastmod>2022-10-08</lastmod>
@@ -46,19 +55,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://mr54233.github.io/2022/10/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%81%E6%B0%B4%E8%B4%A6/</loc>
-    
-    <lastmod>2022-10-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://mr54233.github.io/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2022-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,11 +66,32 @@
   
   <url>
     <loc>https://mr54233.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2022-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/tags/%E6%B5%81%E6%B0%B4%E8%B4%A6/</loc>
+    <lastmod>2022-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/tags/hello-world/</loc>
+    <lastmod>2022-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
 
+  
+  <url>
+    <loc>https://mr54233.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2022-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

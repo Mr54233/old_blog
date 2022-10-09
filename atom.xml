@@ -6,7 +6,7 @@
   <link href="https://mr54233.github.io/atom.xml" rel="self"/>
   
   <link href="https://mr54233.github.io/"/>
-  <updated>2022-10-08T08:15:26.954Z</updated>
+  <updated>2022-10-09T02:45:59.261Z</updated>
   <id>https://mr54233.github.io/</id>
   
   <author>
@@ -21,13 +21,23 @@
     <link href="https://mr54233.github.io/2022/10/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%81%E6%B0%B4%E8%B4%A6/"/>
     <id>https://mr54233.github.io/2022/10/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%81%E6%B0%B4%E8%B4%A6/</id>
     <published>2022-10-08T07:59:09.000Z</published>
-    <updated>2022-10-08T08:15:26.954Z</updated>
+    <updated>2022-10-09T02:45:59.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>hello world</p>]]></content>
+    
+    
+    <summary type="html">hello world</summary>
     
     
     
+    <category term="生活" scheme="https://mr54233.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
     <category term="生活" scheme="https://mr54233.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="流水账" scheme="https://mr54233.github.io/tags/%E6%B5%81%E6%B0%B4%E8%B4%A6/"/>
+    
+    <category term="hello world" scheme="https://mr54233.github.io/tags/hello-world/"/>
     
   </entry>
   
