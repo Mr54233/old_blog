@@ -6,12 +6,12 @@ https://mr54233.github.io/tags/index.html
 https://mr54233.github.io/categories/index.html
 https://mr54233.github.io/about/index.html
 https://mr54233.github.io/
-https://mr54233.github.io/tags/%E5%8A%A8%E7%94%BB/
-https://mr54233.github.io/tags/%E4%B8%87%E7%A5%9E%E6%AE%BF/
-https://mr54233.github.io/tags/%E5%B9%B4%E5%BA%A6/
 https://mr54233.github.io/tags/%E7%94%9F%E6%B4%BB/
 https://mr54233.github.io/tags/%E6%B5%81%E6%B0%B4%E8%B4%A6/
 https://mr54233.github.io/tags/hello-world/
-https://mr54233.github.io/categories/%E5%8A%A8%E7%94%BB/
+https://mr54233.github.io/tags/%E5%8A%A8%E7%94%BB/
+https://mr54233.github.io/tags/%E4%B8%87%E7%A5%9E%E6%AE%BF/
+https://mr54233.github.io/tags/%E5%B9%B4%E5%BA%A6/
 https://mr54233.github.io/categories/%E7%94%9F%E6%B4%BB/
+https://mr54233.github.io/categories/%E5%8A%A8%E7%94%BB/
 https://mr54233.github.io/categories/%E5%8A%A8%E7%94%BB/%E7%A7%91%E5%B9%BB/

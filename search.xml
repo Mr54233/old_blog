@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello world</title>
+    <url>/posts/47529.html</url>
+    <content><![CDATA[<h1 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h1><p>建站第一篇文章 , 搞个静态站也没有想象中的那么难嘛 . </p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>流水账</tag>
+        <tag>hello world</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>万神殿看完了</title>
     <url>/posts/13891.html</url>
     <content><![CDATA[<p>这可能是个人心目中的年度最佳科幻动画了</p>
@@ -20,6 +34,7 @@
 <p>本片的核心就是一个词 <strong>Uploaded Intelligence 上载智能</strong> , 简单来说就是在剧中人类发现 AI 始终还是无法突破自己设定的框架, 无法达到他们想要的效果 .</p>
 <p>于是他们发现把人直接<em>数字化</em> , 也就是所谓的’Upload 上传’, 效率能比 AI 高出不知道多少倍 , 这就是所谓的 UI , 主角的父亲和另外两个 UI 组成了最开始的 UI , 然后故事就以这三个人来开始商讨如何解决他们发现的缺陷–即运行需要消耗能量 , 能量耗尽将再一次<del>死去</del> , 第三人钱达在逃离他所在的集团之后将制造 UI 的技术发给了各个大国(当然也包括中国) , 其他两人逐渐开始因为这个和钱达对立</p>
 <h2 id="乱扯"><a href="#乱扯" class="headerlink" title="乱扯"></a>乱扯</h2><p>看的人停不下来 , 最后两集我都是等全部出完才一股脑看完的 , 太爽了真的 , 很少有动画能达到美剧的编剧水平的 , <strong>刘宇昆</strong>真**是人才 , 当年知道三体是他翻译的时候 , 就觉得这人真牛啊 , 现在一看他的简历发现自己就是个<del>废物</del></p>
+<h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><p>准备看看万神殿的原著《奇点移民》</p>
 ]]></content>
       <categories>
         <category>动画</category>
@@ -29,20 +44,6 @@
         <tag>动画</tag>
         <tag>万神殿</tag>
         <tag>年度</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello world</title>
-    <url>/posts/47529.html</url>
-    <content><![CDATA[<h1 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h1><p>建站第一篇文章 , 搞个静态站也没有想象中的那么难嘛 . </p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>流水账</tag>
-        <tag>hello world</tag>
       </tags>
   </entry>
 </search>
