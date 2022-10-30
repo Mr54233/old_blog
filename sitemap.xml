@@ -83,27 +83,6 @@
 
   
   <url>
-    <loc>https://mr54233.github.io/tags/%E5%8A%A8%E7%94%BB/</loc>
-    <lastmod>2022-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mr54233.github.io/tags/%E4%B8%87%E7%A5%9E%E6%AE%BF/</loc>
-    <lastmod>2022-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mr54233.github.io/tags/%E5%B9%B4%E5%BA%A6/</loc>
-    <lastmod>2022-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://mr54233.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2022-10-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -131,7 +110,35 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://mr54233.github.io/tags/%E5%8A%A8%E7%94%BB/</loc>
+    <lastmod>2022-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/tags/%E4%B8%87%E7%A5%9E%E6%AE%BF/</loc>
+    <lastmod>2022-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/tags/%E5%B9%B4%E5%BA%A6/</loc>
+    <lastmod>2022-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://mr54233.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2022-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://mr54233.github.io/categories/%E5%8A%A8%E7%94%BB/</loc>
@@ -142,13 +149,6 @@
   
   <url>
     <loc>https://mr54233.github.io/categories/%E5%8A%A8%E7%94%BB/%E7%A7%91%E5%B9%BB/</loc>
-    <lastmod>2022-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mr54233.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2022-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
