@@ -15,23 +15,6 @@
       </tags>
   </entry>
   <entry>
-    <title>终于回家~</title>
-    <url>/posts/64887.html</url>
-    <content><![CDATA[<h1 id="回家了"><a href="#回家了" class="headerlink" title="回家了"></a>回家了</h1><p>从深圳回到了八个月没回过的家，家里都变样了。</p>
-<p><img src="https://2img.net/h/i.ibb.co/BKMxZbW/msedge-er-Cnuem-S7l.png"></p>
-<p><img src="https://2img.net/h/i.ibb.co/cFPNv5R/msedge-n-Pop-VKz-Hc-F.png"></p>
-<p><img src="https://2img.net/h/i.ibb.co/wCY6dbg/msedge-E6uzicfhm4.png"></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>流水账</tag>
-        <tag>回家</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>万神殿看完了</title>
     <url>/posts/13891.html</url>
     <content><![CDATA[<p>这可能是个人心目中的年度最佳科幻动画了</p>
@@ -61,6 +44,57 @@
         <tag>动画</tag>
         <tag>万神殿</tag>
         <tag>年度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>终于回家~</title>
+    <url>/posts/64887.html</url>
+    <content><![CDATA[<h1 id="回家了"><a href="#回家了" class="headerlink" title="回家了"></a>回家了</h1><p>从深圳回到了八个月没回过的家，家里都变样了。</p>
+<p><img src="https://2img.net/h/i.ibb.co/BKMxZbW/msedge-er-Cnuem-S7l.png"></p>
+<p><img src="https://2img.net/h/i.ibb.co/cFPNv5R/msedge-n-Pop-VKz-Hc-F.png"></p>
+<p><img src="https://2img.net/h/i.ibb.co/wCY6dbg/msedge-E6uzicfhm4.png"></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>流水账</tag>
+        <tag>回家</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录一下写论文过程中遇到的问题</title>
+    <url>/posts/40063.html</url>
+    <content><![CDATA[<h1 id="记录一下写毕设的时候的问题"><a href="#记录一下写毕设的时候的问题" class="headerlink" title="记录一下写毕设的时候的问题."></a>记录一下写毕设的时候的问题.</h1><p>毕设用的 vue+nodejs 写的一个预约挂号的系统,UI设计什么的统统没有,写的很糊但是都是自己写的.</p>
+<h2 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h2><p>后端方面用的 nodejs+express,一开始就装了 cors 允许跨域,然后配置了 JWT 作为鉴权 token,之后就开始挂载路由写 api,用 postman 测试,这里问题都不大<br>数据库方面用的是 MySQL 的数据库,用 navicat 来进行管理,nodejs 的 mysql 插件还需要 MySQL 数据库改加密方式才连的上,这问题当时装的时候就知道了,</p>
+<p>因为 MySQL 新版本的加密问题,mysql 插件暂时无法适配,只能去改 MySQL 数据库的加密方式,操作如下</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">alter USER &#x27;root&#x27;@&#x27;localhost&#x27; IDENTIFIED BY &#x27;password&#x27; PASSWORD EXPIRENEVER;</span><br><span class="line">alter USER &#x27;root&#x27;@&#x27;localhost&#x27; IDENTIFIED WITH mysql_native_password BY &#x27;修改自己的密码&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>还有就是在创建连接池的时候需要<strong>设置时区</strong>,否则很容易查半天查不出原因.</p>
+<h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><p>主要是前端问题比较多,因为我主要是写前端的嘛</p>
+<p>然后前端用的框架是 vue 和 elementUI,也是一堆问题</p>
+<h3 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h3><p>vue 项目用的 vue2,所以是用的 vuecli 来构建前端项目,vuecli 的可视化页面很简单就能构建一个 vue2 的项目,可以很简单的安装各种所需的插件.<br>能自动给你一个处理好了的 webpack 包,不需要你自己再去整各种各样的操作去配置 webpack.</p>
+<p>使用 axios 作为 http 请求的工具,axios 设置 baseURL 设置 headers 设置 Authoritarian 都可以很简单</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">axios.<span class="property">defaults</span>.<span class="property">baseURL</span> = <span class="string">&quot;http://127.0.0.1:3000&quot;</span>;</span><br><span class="line">axios.<span class="property">defaults</span>.<span class="property">headers</span>[<span class="string">&quot;Content-Type&quot;</span>] = <span class="string">&quot;application/x-www-form-urlencoded&quot;</span>;</span><br><span class="line"><span class="comment">// 使用axios请求拦截器去完成路由守卫任务</span></span><br><span class="line">axios.<span class="property">interceptors</span>.<span class="property">request</span>.<span class="title function_">use</span>(<span class="function">(<span class="params">config</span>) =&gt;</span> &#123;</span><br><span class="line">	config.<span class="property">headers</span>.<span class="property">Authorization</span> = <span class="variable language_">window</span>.<span class="property">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&quot;adminToken&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> config;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h3><p>使用 router 进行路由跳转 , 组件需要导入并注册才能用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">	&#123; <span class="attr">path</span>: <span class="string">&quot;/&quot;</span>, <span class="attr">redirect</span>: <span class="string">&quot;/login&quot;</span> &#125;,</span><br><span class="line">	&#123; <span class="attr">path</span>: <span class="string">&quot;/login&quot;</span>, <span class="attr">component</span>: <span class="title class_">Login</span> &#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">path</span>: <span class="string">&quot;/home&quot;</span>,</span><br><span class="line">		<span class="attr">component</span>: <span class="title class_">Home</span>,</span><br><span class="line">		<span class="attr">children</span>: [</span><br><span class="line">			&#123; <span class="attr">path</span>: <span class="string">&quot;/user&quot;</span>, <span class="attr">component</span>: user &#125;,</span><br><span class="line">			&#123; <span class="attr">path</span>: <span class="string">&quot;/doctor&quot;</span>, <span class="attr">component</span>: doctor &#125;,</span><br><span class="line">			&#123; <span class="attr">path</span>: <span class="string">&quot;/department&quot;</span>, <span class="attr">component</span>: department &#125;,</span><br><span class="line">			&#123; <span class="attr">path</span>: <span class="string">&quot;/registered&quot;</span>, <span class="attr">component</span>: registered &#125;,</span><br><span class="line">		],</span><br><span class="line">	&#125;,</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+
+<h3 id="element"><a href="#element" class="headerlink" title="element"></a>element</h3><p>elementui 按需导入,不需要的组件就不用导入,可以减少占用</p>
+<p>element 自带的表单验证可以自定义规则,需要在 data 里边定义一个 rules 对象,然后在 el-form-item 里边加上 rules 属性,然后就可以自定义规则了</p>
+<p>而且需要注意的是,表单数据里边的名字得和规则验证里边的名字匹配,然后在 el-form-item 里边加上 prop 属性,值为表单数据里边的名字,这样才能正确的验证<br>否则就是一直提示错误信息,一直得不到验证</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">regForm</span>: &#123;</span><br><span class="line">    <span class="attr">username</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="attr">password</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">&#125;,</span><br><span class="line"><span class="attr">regFormRules</span>: &#123;</span><br><span class="line">    <span class="attr">username</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">required</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">message</span>: <span class="string">&quot;请输入用户名称&quot;</span>,</span><br><span class="line">            <span class="attr">trigger</span>: <span class="string">&quot;blur&quot;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">min</span>: <span class="number">2</span>,</span><br><span class="line">            <span class="attr">max</span>: <span class="number">10</span>,</span><br><span class="line">            <span class="attr">message</span>: <span class="string">&quot;长度是2到10个字符&quot;</span>,</span><br><span class="line">            <span class="attr">trigger</span>: <span class="string">&quot;blur&quot;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">password</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">required</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">message</span>: <span class="string">&quot;请输入注册密码&quot;</span>,</span><br><span class="line">            <span class="attr">trigger</span>: <span class="string">&quot;blur&quot;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">min</span>: <span class="number">6</span>,</span><br><span class="line">            <span class="attr">max</span>: <span class="number">20</span>,</span><br><span class="line">            <span class="attr">message</span>: <span class="string">&quot;密码长度是6到20个字符&quot;</span>,</span><br><span class="line">            <span class="attr">trigger</span>: <span class="string">&quot;blur&quot;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<h3 id="formatter"><a href="#formatter" class="headerlink" title="formatter"></a>formatter</h3><p>vue展示性别但是后端传来的数据性别是数字,需要使用formatter进行过滤,就可以在页面上展示01代表的男女性别了</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;el-table-column</span><br><span class="line">    prop=&quot;dsex&quot;</span><br><span class="line">    :formatter=&quot;sexFormate&quot;</span><br><span class="line">    label=&quot;医生性别&quot;</span><br><span class="line">    align=&quot;center&quot;</span><br><span class="line">&gt;</span><br><span class="line">&lt;/el-table-column&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title function_">sexFormate</span>(<span class="params">row, index</span>) &#123;</span><br><span class="line"><span class="keyword">if</span> (row.<span class="property">dsex</span> == <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;男&quot;</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (row.<span class="property">dsex</span> == <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;女&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;,</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>bug</category>
+        <category>论文</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+        <tag>问题</tag>
       </tags>
   </entry>
 </search>
