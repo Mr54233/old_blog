@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello world</title>
+    <url>/posts/47529.html</url>
+    <content><![CDATA[<h1 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h1><p>建站第一篇文章 , 搞个静态站也没有想象中的那么难嘛 . </p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>流水账</tag>
+        <tag>hello world</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初至南京</title>
+    <url>/posts/60122.html</url>
+    <content><![CDATA[<h1 id="初至南京"><a href="#初至南京" class="headerlink" title="初至南京"></a>初至南京</h1><p>11号到南京，现在是23号周日晚上九点。<br>真不敢相信我在南京已经活了快半个月了。<br>现在躺在床上写这个blog，倒也算是一种坚持吧。</p>
+<h1 id="实习"><a href="#实习" class="headerlink" title="实习"></a>实习</h1><p>很遗憾，在去深圳之前就应该问清楚，来了南京这边hr说没有岗位了，全都满人了，需要拿到毕业证之后才能来公司试用期，美其名曰培训、培养。<br>无奈，只能先在旅店住下，然后我迅速找了个兼职干着先。</p>
+<h1 id="兼职"><a href="#兼职" class="headerlink" title="兼职"></a>兼职</h1><p>从来没干过兼职的我，找兼职还挺快的。<br>在158迅速就找到了一个新街口的活，直接过去干了一天。<br>好家伙，原来端盘子是这么累的活，但他就给130一天，不过好在包饭，也算是解决了一大问题。</p>
+<h1 id="住宿"><a href="#住宿" class="headerlink" title="住宿"></a>住宿</h1><p>最麻烦的问题就是住宿，只身来南京，一个人住哪儿其实都行。<br>主要就是东西不好带着走，其实东西也没多少，主要就是电脑手机。<br>当时在车上想的是住五天就够了，毕竟80一天呢，但是出了这档屁事，家人都说可以多住几天，我倒觉得没必要。<br>来都来了（经典），干脆直接租房子，于是看了两个房子，直接和自如签了合同（倒也是为了图省事，贵点就贵点吧）。<br>三十页的合同倒也是第一回看，连家里的老中介都惊叹道“30页？签的什么合同哦？”。<br>现在住的自如的房子，1530+153&#x3D;1680 一个月，属于是还能接受的，算下来一天不过五六十。<br>打工的工资足够覆盖就行的，吃倒是吃不了多少东西。</p>
+<h1 id="吃饭"><a href="#吃饭" class="headerlink" title="吃饭"></a>吃饭</h1><p>这边吃饭口味是真的给我吃麻了。<br>坏消息：甜的！吃什么都没辣椒，比深圳那边还过分，tmd！<br>好消息：辣口够辣！前提是你得和他说，辣椒不像深圳加一勺都没味道。</p>
+<h1 id="出行"><a href="#出行" class="headerlink" title="出行"></a>出行</h1><p>来南京发现自行车遍地都是，三家共享单车企业和政府自行车把南京大大小小的街道全都塞的满满当当。<br>有的时候骑车都没有地方停车，塞成这样。<br>第一天来的时候就买了张月卡，两个小时内的单车都不要钱，爽歪歪。<br>没见着什么助力车。主要是老城区估计不让骑共享的助力车，这边骑电驴子得戴帽子。</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>南京给我的第一印象就是人文。<br>整座城市的街道星罗棋布，非常规整，横平竖直的，导航也省劲。<br>吃的不辣，听说吃的不辣都是比较富有的地区。<br>很喜欢骑车，道路两旁一般都有专用的骑车专用道，用护栏和汽车道隔开的那种。<br>住的也还算舒服，一楼，朝北，没有太阳，但是不算冷，也不算差，我还算满意。<br>就这样，我来到了南京，一个我完全陌生的城市。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>流水账</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>万神殿看完了</title>
     <url>/posts/13891.html</url>
     <content><![CDATA[<p>这可能是个人心目中的年度最佳科幻动画了</p>
@@ -33,20 +65,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello world</title>
-    <url>/posts/47529.html</url>
-    <content><![CDATA[<h1 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h1><p>建站第一篇文章 , 搞个静态站也没有想象中的那么难嘛 . </p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>流水账</tag>
-        <tag>hello world</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>离深随笔</title>
     <url>/posts/6588.html</url>
     <content><![CDATA[<h1 id="离深在即"><a href="#离深在即" class="headerlink" title="离深在即"></a>离深在即</h1><p>有一说一，我还是挺喜欢深圳这座城市的，气候湿润，气温适宜，我身上的细胞都给大脑传输“留在这”的念头，但是各位细胞对不住啊，我是真没能留在这里，我的，看看这辈子能不能给各位爷补上。<br>昨天毕业答辩已经整完了，本来准备今天搞完的考试昨天也一次性的搞完了，至此我的大学就这样在一个海边的陌生城市结束了。<br>考试应该没问题。<br>因为昨天把今天的考试整完了，所以今天的时间就空出来了，于是哥几个合计合计就准备去一趟海边。</p>
@@ -63,23 +81,6 @@
       <tags>
         <tag>毕业</tag>
         <tag>感想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>终于回家~</title>
-    <url>/posts/64887.html</url>
-    <content><![CDATA[<h1 id="回家了"><a href="#回家了" class="headerlink" title="回家了"></a>回家了</h1><p>从深圳回到了八个月没回过的家，家里都变样了。</p>
-<p><img src="https://2img.net/h/i.ibb.co/BKMxZbW/msedge-er-Cnuem-S7l.png"></p>
-<p><img src="https://2img.net/h/i.ibb.co/cFPNv5R/msedge-n-Pop-VKz-Hc-F.png"></p>
-<p><img src="https://2img.net/h/i.ibb.co/wCY6dbg/msedge-E6uzicfhm4.png"></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>流水账</tag>
-        <tag>回家</tag>
       </tags>
   </entry>
   <entry>
@@ -114,6 +115,23 @@
       <tags>
         <tag>bug</tag>
         <tag>问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>终于回家~</title>
+    <url>/posts/64887.html</url>
+    <content><![CDATA[<h1 id="回家了"><a href="#回家了" class="headerlink" title="回家了"></a>回家了</h1><p>从深圳回到了八个月没回过的家，家里都变样了。</p>
+<p><img src="https://2img.net/h/i.ibb.co/BKMxZbW/msedge-er-Cnuem-S7l.png"></p>
+<p><img src="https://2img.net/h/i.ibb.co/cFPNv5R/msedge-n-Pop-VKz-Hc-F.png"></p>
+<p><img src="https://2img.net/h/i.ibb.co/wCY6dbg/msedge-E6uzicfhm4.png"></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>流水账</tag>
+        <tag>回家</tag>
       </tags>
   </entry>
 </search>
