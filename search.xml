@@ -65,43 +65,6 @@
       </tags>
   </entry>
   <entry>
-    <title>总结一下实习一个多礼拜以来的问题</title>
-    <url>/posts/40496.html</url>
-    <content><![CDATA[<h1 id="终于开始实习了"><a href="#终于开始实习了" class="headerlink" title="终于开始实习了"></a>终于开始实习了</h1><p>五月的尾巴，接到了hr的通知，说有个实习岗位，问我去不去，当时在花店帮忙520的活，但是我还是答应下来了。<br>然后就是各种材料的办理，又办了一张浦发的工资卡。<br>现在，六月刚开头，也实习了快半个月了。是时候总结一下了。   </p>
-<h1 id="实习伊始"><a href="#实习伊始" class="headerlink" title="实习伊始"></a>实习伊始</h1><p>刚到公司的时候，给我分配了一个组，找了两哥带我。<br>这个组的技术栈比较老，不是很新，而且我刚来，也不会让我动核心的数据。<br>公司的技术栈虽然比较老，但是我在实训时候学的东西还可以用上，这点就还可以。<br>所以我一开始看他们的项目看的差不多之后，他们就开始给我安排任务了。</p>
-<h1 id="技术问题"><a href="#技术问题" class="headerlink" title="技术问题"></a>技术问题</h1><p>因为他们用的是iview这个组件库，名气不大，因此资源不多，问题也不少  </p>
-<h2 id="在iview中的label无法自定义"><a href="#在iview中的label无法自定义" class="headerlink" title="在iview中的label无法自定义"></a>在iview中的label无法自定义</h2><p>这个问题是iview中的formitem的问题，无法自定义label<br>所以最后的解决方法是用::v-deep选择器选到这个label然后对他进行修改样式<br>算是第一次接触到这个选择器吧。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::v-deep .apiMenu-form .ivu-form-item-label&#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">  <span class="attribute">text-align</span>: justify;</span><br><span class="line">  <span class="attribute">text-align-last</span>: justify</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="数据滚动列表"><a href="#数据滚动列表" class="headerlink" title="数据滚动列表"></a>数据滚动列表</h2><p>用到的是一个插件：vue-seamless-scroll<br>npm安装，在需要用的地方导入就行<br>甚至还有中文文档：<a href="https://chenxuan0000.github.io/vue-seamless-scroll/zh/guide/">vue-seamless-scroll中文文档</a></p>
-<p>导入之后就想这样在需要的地方引入就行了，很好用，上手简单</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">vue-seamless-scroll</span> <span class="attr">:data</span>=<span class="string">&quot;listData&quot;</span> <span class="attr">class</span>=<span class="string">&quot;warp&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;(item, index) in listData&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;index&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;title&quot;</span> <span class="attr">v-text</span>=<span class="string">&quot;item.title&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;date&quot;</span> <span class="attr">v-text</span>=<span class="string">&quot;item.date&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">vue-seamless-scroll</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="下拉菜单"><a href="#下拉菜单" class="headerlink" title="下拉菜单"></a>下拉菜单</h2><p>这个是个大问题<br>当时用iview写的这个组件，但是有两个问题</p>
-<ol>
-<li>哪怕可以一页展示，这个组件的右侧还是会出现滚动条，影响美观</li>
-<li>每次点击再点消失，会导致页面抖动，几乎百分百复现。</li>
-</ol>
-<p>于是在尝试了添加transfer之后这两个问题基本解决，但是又出现了新的问题</p>
-<ul>
-<li>会被遮挡</li>
-</ul>
-<p>大问题啊，你点开一个下拉菜单居然被表单遮住了。显示都不完整了。</p>
-<p>于是，在讨论之后，我用elementUI的下拉菜单重写了这个下拉菜单，这才解决这个问题。</p>
-<h2 id="echarts饼图labelline问题"><a href="#echarts饼图labelline问题" class="headerlink" title="echarts饼图labelline问题"></a>echarts饼图labelline问题</h2><p>他们需要在没有数据的时候不显示label和labelline，我找了很多地方，发现都是说样式上的修改，但是官方没有提供这个地方的自定义。</p>
-<p>最后找到一个歪门邪道，如果他们没有给数据或者给的数据是0，那就直接判定赋值给null，这样echarts就不会绘制这个数据的label和labelline</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123; <span class="attr">value</span>: <span class="variable language_">this</span>.<span class="property">titleData</span>.<span class="property">mysqlCount</span> == <span class="number">0</span> ? <span class="literal">null</span> :<span class="variable language_">this</span>.<span class="property">titleData</span>.<span class="property">mysqlCount</span>, <span class="attr">name</span>: <span class="string">&quot;MySQL数据库&quot;</span> &#125;,</span><br></pre></td></tr></table></figure>
-<p>就这样就可以了，很离谱，但是很有效。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>这样看下来，一个多礼拜好像也没写很多代码，改很多bug，继续努力吧！</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>实习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>旧年</title>
     <url>/posts/51994.html</url>
     <content><![CDATA[<p>二零二四年一月一日下午三点三十五，我坐在家中无所事事。<br>遂记录。</p>
@@ -223,6 +186,43 @@
       </tags>
   </entry>
   <entry>
+    <title>总结一下实习一个多礼拜以来的问题</title>
+    <url>/posts/40496.html</url>
+    <content><![CDATA[<h1 id="终于开始实习了"><a href="#终于开始实习了" class="headerlink" title="终于开始实习了"></a>终于开始实习了</h1><p>五月的尾巴，接到了hr的通知，说有个实习岗位，问我去不去，当时在花店帮忙520的活，但是我还是答应下来了。<br>然后就是各种材料的办理，又办了一张浦发的工资卡。<br>现在，六月刚开头，也实习了快半个月了。是时候总结一下了。   </p>
+<h1 id="实习伊始"><a href="#实习伊始" class="headerlink" title="实习伊始"></a>实习伊始</h1><p>刚到公司的时候，给我分配了一个组，找了两哥带我。<br>这个组的技术栈比较老，不是很新，而且我刚来，也不会让我动核心的数据。<br>公司的技术栈虽然比较老，但是我在实训时候学的东西还可以用上，这点就还可以。<br>所以我一开始看他们的项目看的差不多之后，他们就开始给我安排任务了。</p>
+<h1 id="技术问题"><a href="#技术问题" class="headerlink" title="技术问题"></a>技术问题</h1><p>因为他们用的是iview这个组件库，名气不大，因此资源不多，问题也不少  </p>
+<h2 id="在iview中的label无法自定义"><a href="#在iview中的label无法自定义" class="headerlink" title="在iview中的label无法自定义"></a>在iview中的label无法自定义</h2><p>这个问题是iview中的formitem的问题，无法自定义label<br>所以最后的解决方法是用::v-deep选择器选到这个label然后对他进行修改样式<br>算是第一次接触到这个选择器吧。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::v-deep .apiMenu-form .ivu-form-item-label&#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">  <span class="attribute">text-align</span>: justify;</span><br><span class="line">  <span class="attribute">text-align-last</span>: justify</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="数据滚动列表"><a href="#数据滚动列表" class="headerlink" title="数据滚动列表"></a>数据滚动列表</h2><p>用到的是一个插件：vue-seamless-scroll<br>npm安装，在需要用的地方导入就行<br>甚至还有中文文档：<a href="https://chenxuan0000.github.io/vue-seamless-scroll/zh/guide/">vue-seamless-scroll中文文档</a></p>
+<p>导入之后就想这样在需要的地方引入就行了，很好用，上手简单</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">vue-seamless-scroll</span> <span class="attr">:data</span>=<span class="string">&quot;listData&quot;</span> <span class="attr">class</span>=<span class="string">&quot;warp&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;(item, index) in listData&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;index&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;title&quot;</span> <span class="attr">v-text</span>=<span class="string">&quot;item.title&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;date&quot;</span> <span class="attr">v-text</span>=<span class="string">&quot;item.date&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">vue-seamless-scroll</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="下拉菜单"><a href="#下拉菜单" class="headerlink" title="下拉菜单"></a>下拉菜单</h2><p>这个是个大问题<br>当时用iview写的这个组件，但是有两个问题</p>
+<ol>
+<li>哪怕可以一页展示，这个组件的右侧还是会出现滚动条，影响美观</li>
+<li>每次点击再点消失，会导致页面抖动，几乎百分百复现。</li>
+</ol>
+<p>于是在尝试了添加transfer之后这两个问题基本解决，但是又出现了新的问题</p>
+<ul>
+<li>会被遮挡</li>
+</ul>
+<p>大问题啊，你点开一个下拉菜单居然被表单遮住了。显示都不完整了。</p>
+<p>于是，在讨论之后，我用elementUI的下拉菜单重写了这个下拉菜单，这才解决这个问题。</p>
+<h2 id="echarts饼图labelline问题"><a href="#echarts饼图labelline问题" class="headerlink" title="echarts饼图labelline问题"></a>echarts饼图labelline问题</h2><p>他们需要在没有数据的时候不显示label和labelline，我找了很多地方，发现都是说样式上的修改，但是官方没有提供这个地方的自定义。</p>
+<p>最后找到一个歪门邪道，如果他们没有给数据或者给的数据是0，那就直接判定赋值给null，这样echarts就不会绘制这个数据的label和labelline</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123; <span class="attr">value</span>: <span class="variable language_">this</span>.<span class="property">titleData</span>.<span class="property">mysqlCount</span> == <span class="number">0</span> ? <span class="literal">null</span> :<span class="variable language_">this</span>.<span class="property">titleData</span>.<span class="property">mysqlCount</span>, <span class="attr">name</span>: <span class="string">&quot;MySQL数据库&quot;</span> &#125;,</span><br></pre></td></tr></table></figure>
+<p>就这样就可以了，很离谱，但是很有效。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>这样看下来，一个多礼拜好像也没写很多代码，改很多bug，继续努力吧！</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>离深随笔</title>
     <url>/posts/6588.html</url>
     <content><![CDATA[<h1 id="离深在即"><a href="#离深在即" class="headerlink" title="离深在即"></a>离深在即</h1><p>有一说一，我还是挺喜欢深圳这座城市的，气候湿润，气温适宜，我身上的细胞都给大脑传输“留在这”的念头，但是各位细胞对不住啊，我是真没能留在这里，我的，看看这辈子能不能给各位爷补上。<br>昨天毕业答辩已经整完了，本来准备今天搞完的考试昨天也一次性的搞完了，至此我的大学就这样在一个海边的陌生城市结束了。<br>考试应该没问题。<br>因为昨天把今天的考试整完了，所以今天的时间就空出来了，于是哥几个合计合计就准备去一趟海边。</p>
@@ -239,23 +239,6 @@
       <tags>
         <tag>毕业</tag>
         <tag>感想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>终于回家~</title>
-    <url>/posts/64887.html</url>
-    <content><![CDATA[<h1 id="回家了"><a href="#回家了" class="headerlink" title="回家了"></a>回家了</h1><p>从深圳回到了八个月没回过的家，家里都变样了。</p>
-<p><img src="https://2img.net/h/i.ibb.co/BKMxZbW/msedge-er-Cnuem-S7l.png"></p>
-<p><img src="https://2img.net/h/i.ibb.co/cFPNv5R/msedge-n-Pop-VKz-Hc-F.png"></p>
-<p><img src="https://2img.net/h/i.ibb.co/wCY6dbg/msedge-E6uzicfhm4.png"></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>流水账</tag>
-        <tag>回家</tag>
       </tags>
   </entry>
   <entry>
@@ -290,6 +273,23 @@
       <tags>
         <tag>bug</tag>
         <tag>问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>终于回家~</title>
+    <url>/posts/64887.html</url>
+    <content><![CDATA[<h1 id="回家了"><a href="#回家了" class="headerlink" title="回家了"></a>回家了</h1><p>从深圳回到了八个月没回过的家，家里都变样了。</p>
+<p><img src="https://2img.net/h/i.ibb.co/BKMxZbW/msedge-er-Cnuem-S7l.png"></p>
+<p><img src="https://2img.net/h/i.ibb.co/cFPNv5R/msedge-n-Pop-VKz-Hc-F.png"></p>
+<p><img src="https://2img.net/h/i.ibb.co/wCY6dbg/msedge-E6uzicfhm4.png"></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>流水账</tag>
+        <tag>回家</tag>
       </tags>
   </entry>
 </search>
