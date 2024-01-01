@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mr54233.github.io/posts/51994.html</loc>
+    
+    <lastmod>2024-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mr54233.github.io/posts/40496.html</loc>
     
     <lastmod>2023-06-01</lastmod>
@@ -112,7 +121,7 @@
 
   <url>
     <loc>https://mr54233.github.io/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -120,91 +129,98 @@
   
   <url>
     <loc>https://mr54233.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/%E6%B5%81%E6%B0%B4%E8%B4%A6/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/hello-world/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/%E5%8A%A8%E7%94%BB/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/%E4%B8%87%E7%A5%9E%E6%AE%BF/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/%E5%B9%B4%E5%BA%A6/</loc>
-    <lastmod>2023-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mr54233.github.io/tags/%E6%AF%95%E4%B8%9A/</loc>
-    <lastmod>2023-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mr54233.github.io/tags/%E6%84%9F%E6%83%B3/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/%E5%AE%9E%E4%B9%A0/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/tags/%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/tags/%E6%AF%95%E4%B8%9A/</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/tags/%E6%84%9F%E6%83%B3/</loc>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/%E5%9B%9E%E5%AE%B6/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/bug/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/tags/%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -213,49 +229,63 @@
   
   <url>
     <loc>https://mr54233.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/categories/%E5%8A%A8%E7%94%BB/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mr54233.github.io/categories/%E5%8A%A8%E7%94%BB/%E7%A7%91%E5%B9%BB/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/categories/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/categories/%E7%94%9F%E6%B4%BB/%E6%B5%81%E6%B0%B4%E5%B8%90/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/categories/%E5%8A%A8%E7%94%BB/%E7%A7%91%E5%B9%BB/</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/categories/%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mr54233.github.io/categories/%E8%AE%B0%E5%BD%95/%E8%AE%BA%E6%96%87/</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mr54233.github.io/categories/%E8%AE%B0%E5%BD%95/%E7%94%9F%E6%B4%BB/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
